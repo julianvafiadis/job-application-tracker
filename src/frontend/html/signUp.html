@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Tracker | Sign Up</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">Application Tracker</div>
+            <nav class="topbar-links">
+                <a href="login.html">Login</a>
+                <a href="signUp.html" aria-current="page">Sign up</a>
+                <a href="tracker.html">Tracker</a>
+            </nav>
+        </header>
+
+        <main class="content-center">
+            <section class="card auth-card" aria-labelledby="signup-title">
+                <h1 id="signup-title">Create your account</h1>
+                <p class="muted">Keep your job search organized in one simple place.</p>
+
+                <form id="signup-form" class="form-stack">
+                    <label for="signup-name">Full name</label>
+                    <input id="signup-name" name="fullName" type="text" placeholder="Jane Smith" required>
+
+                    <label for="signup-email">Email</label>
+                    <input id="signup-email" name="email" type="email" placeholder="name@email.com" required>
+
+                    <label for="signup-password">Password</label>
+                    <input id="signup-password" name="password" type="password" placeholder="Create password" required>
+
+                    <button type="submit" class="btn btn-primary">Create account</button>
+                </form>
+
+                <p class="helper-text">Already have an account? <a href="login.html">Sign in</a>.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="../javascript/login.js"></script>
+</body>
+</html>

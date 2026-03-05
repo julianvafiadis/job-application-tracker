@@ -1,14 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>    
+    <title>Application Tracker | Login</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <div id="main-component">
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">Application Tracker</div>
+            <nav class="topbar-links">
+                <a href="login.html" aria-current="page">Login</a>
+                <a href="signUp.html">Sign up</a>
+                <a href="tracker.html">Tracker</a>
+            </nav>
+        </header>
 
+        <main class="content-center">
+            <section class="card auth-card" aria-labelledby="login-title">
+                <h1 id="login-title">Welcome back</h1>
+                <p class="muted">Sign in to view and manage your job applications.</p>
+
+                <form id="login-form" class="form-stack">
+                    <label for="login-email">Email</label>
+                    <input id="login-email" name="email" type="email" placeholder="name@email.com" required>
+
+                    <label for="login-password">Password</label>
+                    <input id="login-password" name="password" type="password" placeholder="Enter password" required>
+
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+
+                <p class="helper-text">No account yet? <a href="signUp.html">Create one</a>.</p>
+            </section>
+        </main>
     </div>
-    <link rel="stylesheet" href="src\backend\frontend\css\login.css">
+
+    <script src="../javascript/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Tracker | Tracker</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">Application Tracker</div>
+            <nav class="topbar-links">
+                <a href="login.html">Login</a>
+                <a href="signUp.html">Sign up</a>
+                <a href="tracker.html" aria-current="page">Tracker</a>
+            </nav>
+        </header>
+
+        <main class="tracker-layout">
+            <section class="card form-card" aria-labelledby="add-application-title">
+                <h1 id="add-application-title">Add application</h1>
+                <p class="muted">Track each company and current step.</p>
+
+                <form id="tracker-form" class="form-grid">
+                    <label for="company">Company</label>
+                    <input id="company" name="company" type="text" placeholder="Notion" required>
+
+                    <label for="role">Role</label>
+                    <input id="role" name="role" type="text" placeholder="Frontend Engineer" required>
+
+                    <label for="status">Status</label>
+                    <select id="status" name="status" required>
+                        <option value="Applied">Applied</option>
+                        <option value="Interview">Interview</option>
+                        <option value="Offer">Offer</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+            </section>
+
+            <section class="card table-card" aria-labelledby="applications-title">
+                <h2 id="applications-title">Applications</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Role</th>
+                                <th class="centered-titles">Status</th>
+                                <th class="centered-titles">Date</th>
+                                <th class="centered-titles">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="applications-body">
+                            <tr>
+                                <td>Example Co</td>
+                                <td>Product Designer</td>
+                                <td class="centered-elements-in-table">
+                                    <button class="pill status-pill" type="button" data-status>Applied</button>
+                                </td>
+                                <th class="centered-elements-in-table">June 8</th>
+                                <td class="centered-elements-in-table"><button class="btn btn-ghost" type="button" data-remove>Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../javascript/tracker.js"></script>
+</body>
+</html>
