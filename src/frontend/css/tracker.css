@@ -1,0 +1,51 @@
+﻿.tracker-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+th {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.centered-titles,
+.centered-elements-in-table {
+    text-align: center;
+}
+
+.status-inline-select {
+    width: auto;
+    min-width: 120px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .tracker-layout {
+        grid-template-columns: 1fr;
+    }
+}
