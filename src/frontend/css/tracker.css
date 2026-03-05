@@ -44,6 +44,75 @@ th {
     font-size: 12px;
 }
 
+.status-pill[data-status-value="Applied"] {
+    background: #f2ebff;
+    border-color: #c5a7ff;
+    color: #5a2ea6;
+}
+
+.status-pill[data-status-value="Interview"] {
+    background: #e8f2ff;
+    border-color: #8fbcff;
+    color: #124a9e;
+}
+
+.status-pill[data-status-value="Offer"] {
+    background: #e9f9ef;
+    border-color: #92d7a7;
+    color: #1b7b3a;
+}
+
+.status-pill[data-status-value="Rejected"] {
+    background: #fdecee;
+    border-color: #f1a0aa;
+    color: #ab1f2d;
+}
+
+.stats-panel {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+}
+
+.stats-panel h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    font-size: 14px;
+}
+
+.stats-grid p {
+    margin: 0;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fafaf9;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats-grid span {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.stats-total {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 560px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 900px) {
     .tracker-layout {
         grid-template-columns: 1fr;
